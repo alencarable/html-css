@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            margin: 0px;
+        }
+
+        header {
+            background-color: cadetblue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            box-shadow: 4px 3px 1.5px rgba(58, 138, 141, 0.5);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: antiquewhite;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: cadetblue;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 20px 0px 30px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.459);
+        }
+
+        article {
+            background-color: lightpink;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: lightblue;
+        }
+
+        footer {
+            background-color: black;
+            color: antiquewhite;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: rgba(172, 255, 47, 0.863);
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>
+                Esportes - Política - Tecnologia
+            </p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloribus sunt veniam corporis exercitationem, incidunt animi repudiandae unde iste! Provident quibusdam cupiditate earum sit commodi architecto corporis fugit? Vel, corrupti.
+                </p>
+                <aside>
+                    <p>Escrito por Gustavo Guanabara.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por alencarable</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

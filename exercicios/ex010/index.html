@@ -1,0 +1,26 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image-x/icon">
+        <title>Trabalhando com links</title>
+    </head>
+    <body>
+        <main>
+            <h1>Usando links externos</h1>
+            <p>Você pode aessar o meu <a href="https://github.com/alencarable" target="_blank" rel="external">repositório público no GitHub.</a></p>
+            <!-- Para que o link seja aberto em uma nova aba basta usar o target="_blank", o rel="external" indica para o navegador que é um link externo. -->
+            <p>Você também pode acessar o meu <a href="https://www.youtube.com/channel/UC2tdldvxO70Cwlxakw2cAgA?view_as=subscriber">canal gratuito no Youtube.</a></p>
+            <!-- Para mais informações acesse o pdf do cap.10 no repositório. -->
+        </main>
+        <section> <!-- Segunda parte da aula -->
+            <h1>Links para download</h1>
+            <ul> <!-- A referência do type tem que pegar no site iana.org/assignments/media-types/-->
+                <li><a href="Livro/modelo.pdf" download="modelo.pdf" type="application/pdf">Baixar um livro em PDF</a></li>
+                <!-- Normalmente quando se coloca download o certo seria ao clicar, o link ser baixado, mas no caso do pdf no Chrome isso não acontece.-->
+                <li><a href="Livro/modelo.zip" download="modelo.zip" type="application/zip">Livro compactado em ZIP</a></li>
+            </ul> 
+        </section>
+    </body>
+    </html>

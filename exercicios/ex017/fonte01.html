@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+            /*
+            Medidas Abslutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+
+            Qual vamos usar: px e/ou em
+            16px = 1em
+            */
+
+            font-size: 1em;
+            font-weight: bolder;
+            /* wieght(peso), width(largura), height(altura) 
+            Dentro do peso têm: lighter, normal, bold, bolder*/
+            font-style: italic;
+            text-decoration: underline;
+            /* antes de fazer esses depois do font-size tem que ver se a minha fonte permite esses ajustes */
+        }
+
+        h1 {
+            /*
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            /* existe uma shothand pra isso, ao invés de colocar tudo um embaixo do outro é só fazer assim:
+            font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Títulos</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil odit in consequuntur quisquam sunt dolor obcaecati tempora est, rerum, cupiditate saepe rem nostrum impedit a id repellendus nam veritatis temporibus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam voluptatum perferendis corrupti doloremque, tempore deserunt ullam ratione repellat. Impedit voluptates rerum magnam quidem corporis inventore delectus soluta tenetur, quia libero.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, ipsum atque aliquam autem, perferendis quos labore omnis earum minima dolorum nesciunt assumenda quod tempora sunt debitis maxime quas sequi consequatur.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo in vitae autem nihil ipsam aperiam placeat deserunt exercitationem! Dolore commodi eum quod eligendi nostrum! Facere iste in corrupti aliquid.</p>
+</body>
+</html>

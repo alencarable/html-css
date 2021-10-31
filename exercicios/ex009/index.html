@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com Listas</h1>
+    </main>
+    <section>
+        <h2>Listas Ordenadas</h2>
+        <div>
+            <ol>
+                <li>Acordar</li> <!-- O fechamento do li (</li> tornou-se opcional a partir do HTML 5 -->
+                <li>Ligar para João</li>
+                <li>Tomar Café</li>
+                <li>Escovar os dentes</li>
+                <li>Ir para a faculdade</li>
+                <li>Almoçar</li>
+                <li>Ir para trabalho</li>
+                <li>Voltar pra casa</li>
+                <li>Jantar</li>
+                <li>Dormir</li>
+            </ol>
+        </div>
+        <div>
+            <!-- Para mudar o padrão visual da lista ordenada é possível usar o parâmetro type: -->
+            <ol type="A"> <!-- Os tipos podem ser números, letras (maiúsculas e minúsculas), I e i (n˚ romano).-->
+                <li>Acordar</li>
+                <li>Ligar para João</li>
+                <li>Tomar café</li>
+                <li>Escovar os dentes</li>
+            </ol>
+        </div>
+        <div>
+            <!-- Para mudar o padrão de ordem da lista utiliza-se o parâmetro start: -->
+            <ol type="a" start="3">
+                <li>Acordar</li>
+                <li>Ligar para João</li>
+                <li>Tomar café</li>
+                <li>Escovar os dentes</li>
+            </ol>
+        </div>
+    </section>
+    <section>
+        <h2>Listas não ordenadas</h2>
+        <div>
+            <ul>
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Tomate</li>
+                <li>Manteiga</li>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+        </div>
+        <div>
+            <!-- Há opçoes de type para </ul>, é possível usar disc; circle; square.-->
+            <ul type="circle">
+                <li>Pão</li>
+                <li>Leite</li>
+                <li>Tomate</li>
+                <li>Manteiga</li>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Minhas linguagens favoritas</h2>
+        <ol>
+            <li>Antigas</li>
+            <ol type="a">
+                <li>Delphi</li>
+                <li>Visual Basic</li>
+                <li>Java</li>
+            </ol>
+            <li>Novas</li>
+            <ol type="a" start="d">
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ol>
+        </ol>
+    </section>
+    <section>
+        <h2>Meus jogos favoritos</h2>
+        <!-- Aqui vamos aprender como fazer aninhamento de listas, ou seja, colocar uma lista dentro da outra.-->
+        <ol>
+            <li>PlayStation 1</li>
+            <ul type="square">
+                <li>Mortal Combat</li>
+                <li>Corrida</li>
+                <ul type="disc">
+                    <li>Cars</li>
+                    <li>Speed Race</li>
+                </ul>
+            </ul>
+            <li>PSP</li>
+            <ul type="square">
+                <li>Gran Turismo</li>
+                <li>Emulador</li>
+            </ul>
+            <li>Xbox One</li>
+            <ul type="square">
+                <li>Forza 7</li>
+                <li>GTA V</li>
+                <li>Horizon</li>
+            </ul>
+        </ol>
+    </section>
+    <section>
+        <h2>Lista de Definição</h2>
+        <dl> <!-- Definition List -->
+            <dt>HTML</dt> <!-- Termo -->
+            <dd>Linguagem de marcação para criação do conteúdo de um site.</dd> <!-- Definição -->
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para criação do design de um site.</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para criação de interatividade de um site.</dd>
+        </dl>
+    </section>
+</body>
+</html>

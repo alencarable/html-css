@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <main>
+        <h1>Outras Formatações</h1>
+    </main>
+    <section>
+        <h2>Código-fonte</h2>
+        <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+        <!-- A tag </code> faz um tipo de fonte monoespaçada -->
+    </section>
+    <section>
+        <pre> <!-- Usando a tag </pre> o código aparecerá no site da mesma forma como foi escrito aqui -->
+            <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+            </code>
+        </pre> <!-- Para diminuir a indentação, basta selecionar o que texto que se quer diminuir e apertar SHIFT + TAB. -->
+        <!-- Para aumentar a indentação, basta selecionar o texto e apertar TAB. -->
+    </section>
+    <section>
+        <h2>Citações simples</h2>
+        <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+        <!-- Utiliza-se a tag </q> pois significa quotation (citação). -->
+        <h2>Citações completas</h2>
+        <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+        <!-- Abre-se uma blockquote para citações maiores -->
+        <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&lpg=PP1&dq=html%20jeff%20noble&hl=pt-BR&pg=PP1#v=onepage&q=html%20jeff%20noble&f=false"> <!-- Pode-se usar uma referenciação com um parâmetro chamado _cite_. Utiliza-se isso para que os mecanismos de busca possam compreender de onde saiu essa citação. Serve para direitos autorais. -->
+            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+        </blockquote>
+    </section>
+    <section> <!-- Essa section vai servir para fazer o desafio 6 -->
+        <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    </section>
+    <section>
+        <h2>Texto invertido</h2>
+        <!-- A tag </bdo> serve para inverter o texto. Pode ser Left-to-right (l) ou Right-to-left (r). -->
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+        <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <main>
+        <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    </main>
+    <section>
+        <picture>
+            <!-- A ordem é sempre da menor foto para o maior, e normalmente se usa na media o max-width-->
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagem flexível">
+            <!-- Aqui nós estamos utilizando a proporção para Largura, se vc quiser pode usar para altura (height) -->
+        </picture>
+    </section>
+    <section>
+        <h1>Repoduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <!-- Normalmente você só preciso adicionar os parâmetros controls e autoplay no código, mas dependendo do navegador, não irá funcionar -->
+        <audio src="media/Symphony No. 5 (by Beethoven) - Beethoven.mp3" controls></audio>
+        <!-- Os formatos compatíveis são MP3, WAV e OGG-->
+        <div>
+            <!-- Vamos colocar vários formatos para caso o navegador não aceite um, ele aceitará o outro-->
+            <audio preload="metadata" controls>
+            <!-- Usa-se um preload para que o arquivo seja carregado junto a página, e o metadata para que apenas o nome e alguns outros poucos componentes possam ser carregados. -->
+                <source src="media/Symphony No. 5 (by Beethoven) - Beethoven.mp3" type="audio/mpeg">
+                <source src="media/Symphony No. 5 (by Beethoven) - Beethoven.ogg" type="audio/ogg">
+                <source src="media/Symphony No. 5 (by Beethoven) - Beethoven.wav" type="audio/wav">
+                <!-- Se mesmo assim nenhum desses formatos forem compatíveis, então colocarei um link para download-->
+                <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="media/Symphony No. 5 (by Beethoven) - Beethoven.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+                <!-- Caso queira, pode usar o parâmetro loop, para que o audio fique rodando enquanto você estiver na página.-->
+            </audio>
+        </div>
+    </section>
+</body>
+</html>

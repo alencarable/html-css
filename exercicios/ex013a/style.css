@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* Regra @charset caso haja problemas com acentuação */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
+}
+section {
+    color: cadetblue;
+}
+h1 {
+    color: cornflowerblue;
+}
